@@ -1,19 +1,19 @@
-Freelancer/Fiverr/People per hour App
+# Freelancer/Fiverr/People per hour App
 
 An app where freelancers can search for potential work.
 The app allow freelancers to view a list of jobs and to accept/decline job offers. 
 
-MVP
+## MVP
 
 * Allow freelancers to view potential jobs.
 * Allow rates/timescales for jobs to be edited.
 
 
-MVP+
+## MVP+
 * Allow freelancers to login
 
 
-EXTENSIONS
+## EXTENSIONS
 
 * Allow freelancers to accept/decline jobs.
 * Allow freelancers to search for/filter jobs by skillset. 
