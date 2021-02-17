@@ -62,4 +62,16 @@ public class JobController {
         jobRepository.deleteById(id);
         return new ResponseEntity<>(id, HttpStatus.OK);
     }
+
+   // GET ALL JOBS THAT ARE ACCEPTED AS TRUE
+    @GetMapping(value = "/jobs/accepted")
+    public ResponseEntity<List<Job>> getAcceptedJobs(){
+        return new ResponseEntity(jobRepository.findByAcceptedTrue(), HttpStatus.OK);
+    }
+
+    // GET ALL JOBS THAT ARE ACCEPTED AS FALSE
+    @GetMapping(value = "/jobs/decline")
+    public ResponseEntity<List<Job>> getDeclinedJobs(){
+        return new ResponseEntity(jobRepository.findByAcceptedFalse(), HttpStatus.OK);
+    }
 }
