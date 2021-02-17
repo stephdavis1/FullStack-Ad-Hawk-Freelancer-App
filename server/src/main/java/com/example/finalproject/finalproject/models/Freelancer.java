@@ -23,14 +23,18 @@ public class Freelancer {
     @Column
     private String userName;
 
+    @Column
+    private FreelancerType freelancerType;
+
     @JsonIgnoreProperties({"freelancer"})
     @OneToMany(mappedBy = "freelancer", fetch = FetchType.LAZY)
     private List<Job> jobs;
 
-    public Freelancer(String name, String email, String userName) {
+    public Freelancer(String name, String email, String userName, FreelancerType freelancerType) {
         this.name = name;
         this.email = email;
         this.userName = userName;
+        this.freelancerType = freelancerType;
         this.jobs = new ArrayList<>();
     }
 
@@ -67,6 +71,14 @@ public class Freelancer {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public FreelancerType getFreelancerType() {
+        return freelancerType;
+    }
+
+    public void setFreelancerType(FreelancerType freelancerType) {
+        this.freelancerType = freelancerType;
     }
 
     public List<Job> getJobs() {

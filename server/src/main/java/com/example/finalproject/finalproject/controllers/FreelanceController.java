@@ -15,7 +15,7 @@ public class FreelanceController {
     @Autowired
     FreelancerRepository freelancerRepository;
 
-    @GetMapping(value = "/{id}")
+    @GetMapping(value = "/freelancer/{id}")
     public ResponseEntity<Freelancer> getOneFreelancer(@PathVariable Long id){
         return new ResponseEntity(freelancerRepository.findById(id), HttpStatus.OK);
     }
