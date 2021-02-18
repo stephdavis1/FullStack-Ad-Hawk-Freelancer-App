@@ -1,12 +1,15 @@
 import './App.css';
 import AppContainer from "./containers/AppContainer";
 import HomePage from './components/homepage/HomePage';
+import Header from './components/headers/Header';
+import Search from './components/search/Search';
 
 function App() {
   return (
     <>
-      <h1>Welcome to the Freelancer App</h1>
       <HomePage />
+      <Header />
+      <Search />
 
       {/* <AppContainer /> */}
     </>
