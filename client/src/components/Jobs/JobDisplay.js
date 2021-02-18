@@ -13,7 +13,7 @@ const JobDisplay = ({ jobs }) => {
 
     return(
         <div>
-            <h2>Job Display</h2>
+            <h2>These are the Jobs on offer</h2>
             <ul id = "job-display">
                 {jobList}
             </ul>

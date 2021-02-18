@@ -1,5 +1,4 @@
 import './App.css';
-import { useState, useEffect } from 'react';
 import AppContainer from "./containers/AppContainer";
 
 function App() {

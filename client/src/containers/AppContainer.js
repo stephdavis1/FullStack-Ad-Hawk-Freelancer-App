@@ -4,7 +4,7 @@ import JobDisplay from "../components/Jobs/JobDisplay";
 const AppContainer = () => {
 
     const [jobs, setJobs] = useState([])
-    const [freeLancers, setFreelancers] = useState([])
+    const [freelancers, setFreelancers] = useState([])
 
     const getJobs = () => {
         console.log("Bringing in list of jobs...");
