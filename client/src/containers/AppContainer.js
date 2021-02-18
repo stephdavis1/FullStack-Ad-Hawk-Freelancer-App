@@ -1,23 +1,23 @@
 import { useState, useEffect} from 'react';
 import JobDisplay from "../components/Jobs/JobDisplay";
 
-const AppContainer = ({jobs}) => {
+const AppContainer = () => {
 
-    const [job, setJob] = useState([])
-    const [freeLancer, setFreelancer] = useState([])
+    const [jobs, setJobs] = useState([])
+    const [freeLancers, setFreelancers] = useState([])
 
     const getJobs = () => {
         console.log("Bringing in list of jobs...");
         fetch(`http://localhost:8080/jobs`)
         .then(res => res.json())
-        .then(data => setJob(data))
+        .then(data => setJobs(data))
     }
 
     const getFreelancer = () => {
         console.log("Freelancer loading...");
         fetch(`http://localhost:8080/freelancer`)
         .then(res => res.json())
-        .then(data => setJob(data))
+        .then(data => setFreelancers(data))
     }
 
     useEffect(() => {
@@ -30,7 +30,7 @@ const AppContainer = ({jobs}) => {
 
     return(
         <div>
-            <h2>App Container</h2>
+            <h2>Lists of Jobs</h2>
             <JobDisplay jobs={jobs}/>
         </div>
     )
