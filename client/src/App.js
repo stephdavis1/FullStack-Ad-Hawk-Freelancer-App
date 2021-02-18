@@ -1,13 +1,12 @@
 import './App.css';
-import { useState, useEffect } from 'react';
-import AppContainer from "./containers/AppContainer";
+import MainContainer from './containers/MainContainer'
 
 function App() {
   return (
     <>
       <h1>Hello this will be the front page</h1>
 
-      <AppContainer />
+      <MainContainer />
     </>
   );
 }
