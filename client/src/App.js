@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Homepage from "./components/Homepage/Homepage";
 
 function App() {
+  
   return (
     <Router>
       <NavBar/>
