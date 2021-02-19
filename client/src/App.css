@@ -2,14 +2,11 @@
   text-align: center;
 }
 
-#job-display{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  list-style: none;
-}
-
-#job-list{
-  border: 2px solid black;
-  color: darkcyan;
-  border-radius: 4;
+.job {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  padding: 10px 0;
 }
