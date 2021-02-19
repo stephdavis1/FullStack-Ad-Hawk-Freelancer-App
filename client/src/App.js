@@ -1,22 +1,19 @@
 import './App.css';
+
+import { Container } from 'react-bootstrap';
 import Header from "./containers/Header/Header";
 import Footer from "./containers/Footer/Footer";
-import Jobs from "./components/JobsList/Jobs";
-
-const mockJobs = [
-  {title: 'SWE 1 ', company: 'Google'},
-  {title: 'SWE 1 ', company: 'Facebook'},
-  {title: 'SWE 1 ', company: 'Apple'}
-]
+import useFetchJobs from './components/Joblists/useFetchJobs';
 
 function App() {
+  const {jobs, loading, error} = useFetchJobs()
 
   return (
-    <div className="App">
-      <Header />
-      <Jobs jobs={mockJobs} />
-      <Footer />
-    </div>
+    <Container>
+      {loading && <h1>Loading...</h1>}
+      {error && <h1>Error. Try Refreshing.</h1>}
+      <h1>{jobs.length}</h1>
+    </Container>
   );
 }
 
