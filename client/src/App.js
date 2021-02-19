@@ -1,14 +1,12 @@
 import './App.css';
-import AppContainer from "./containers/AppContainer";
-import HomePage from './components/homepage/HomePage';
+import Header from "./containers/Header/Header";
+
 
 function App() {
   return (
-    <>
-      <HomePage />
-
-      <AppContainer />
-    </>
+    <div className="App">
+      <Header />
+    </div>
   );
 }
 
