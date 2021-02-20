@@ -12,10 +12,6 @@ const Header = () => {
                 <Nav.Link href="#features">About</Nav.Link>
                 <Nav.Link href="#pricing">Contact</Nav.Link>
             </Nav>
-            <Form inline>
-                <FormControl type="text" placeholder="Search" className="mr -sm-2" />
-                <Button variant="Outline-info">Search</Button>
-            </Form>
         </Container>
     </Navbar>
     )

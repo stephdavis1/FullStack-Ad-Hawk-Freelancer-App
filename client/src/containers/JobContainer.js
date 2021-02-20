@@ -1,7 +1,7 @@
 import { useState, useEffect} from 'react';
 import JobDisplay from "../components/Jobs/JobDisplay";
 
-const AppContainer = () => {
+const JobContainer = () => {
 
     const [jobs, setJobs] = useState([])
     const [freelancers, setFreelancers] = useState([])
@@ -37,4 +37,4 @@ const AppContainer = () => {
 }
 
 
-export default AppContainer;
+export default JobContainer;

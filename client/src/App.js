@@ -14,7 +14,7 @@ function App() {
   const {jobs, loading, error} = useFetchJobs(params, page)
 
   return (
-    <Container>
+    <Container className="my-4">
       <Header />
       {loading && <h1>Loading...</h1>}
       {error && <h1>Error. Try Refreshing.</h1>}
