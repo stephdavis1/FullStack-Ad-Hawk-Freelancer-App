@@ -7,6 +7,7 @@ import { Container } from 'react-bootstrap';
 import NavBar from './components/NavBar/NavBar';
 import Homepage from './components/homepage/Homepage';
 import JobContainer from './containers/JobContainer';
+import Footer from './containers/Footer/Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/" component={Homepage} />
           <Route path="/jobs" component={JobContainer} />
         </Switch>
+        <Footer />
       </Container>
     </Router>
   );
