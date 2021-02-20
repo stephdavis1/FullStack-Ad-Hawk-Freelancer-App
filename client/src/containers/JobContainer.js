@@ -1,40 +1,40 @@
-import { useState, useEffect} from 'react';
-import JobDisplay from "../components/Jobs/JobDisplay";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
+import { Container } from 'react-bootstrap';
+import Job from '../components/Joblists/Job';
+import useFetchJobs from '../components/Joblists/useFetchJobs';
+import JobsPagination from '../components/Joblists/JobsPagination';
+import SearchForm from '../components/Joblists/SearchForm';
 
-const JobContainer = () => {
+function JobContainer() {
 
-    const [jobs, setJobs] = useState([])
-    const [freelancers, setFreelancers] = useState([])
+  const [params, setParams] = useState({})
+  const [page, setPage] = useState(1)
+  const { jobs, loading, error, hasNextPage } = useFetchJobs(params, page)
 
-    const getJobs = () => {
-        console.log("Bringing in list of jobs...");
-        fetch(`http://localhost:8080/jobs`)
-        .then(res => res.json())
-        .then(data => setJobs(data))
-    }
+  function handleParamChange(e) {
+    const param = e.target.name
+    const value = e.target.value
+    setPage(1)
+    setParams(prevParams => {
+      return { ...prevParams, [param]: value }
+    })
+  }
 
-    const getFreelancer = () => {
-        console.log("Freelancer loading...");
-        fetch(`http://localhost:8080/freelancer`)
-        .then(res => res.json())
-        .then(data => setFreelancers(data))
-    }
+  return (
+    <Container className="my-4">
+      <h1 className="mb-4">Job Search</h1>
+      <SearchForm params={params} onParamChange={handleParamChange} />
+      <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} />
+      {loading && <h1>Loading...</h1>}
+      {error && <h1>Error. Try Refreshing.</h1>}
+      {jobs.map(job => {
+        return <Job key={job.id} job={job} />
+      })}
+      <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} />
+    </Container>
+  );
 
-    useEffect(() => {
-        getJobs()
-    }, []);
-
-    useEffect(() => {
-        getFreelancer()
-    }, []);
-
-    return(
-        <div>
-            <h2>Lists of Jobs</h2>
-            <JobDisplay jobs={jobs}/>
-        </div>
-    )
-}
-
+};
 
 export default JobContainer;

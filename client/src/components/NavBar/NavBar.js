@@ -1,22 +1,22 @@
 import { Link, useHistory } from "react-router-dom";
 
 const NavBar = () => {
-    const useHistory = useHistory();
+    const history = useHistory();
 
     const back = () => {
         history.goBack();
     }
 
     return (
-        <nav className="navbar">
+        <nav class="navbar">
             <li>
                 <a className='navbar-link' href="javascript:history.back()">Back</a>
             </li>
             <li>
-                <a className='navbar-link' to="/">Home</a>
+                <Link className='navbar-link' to="/">Home</Link>
             </li>
             <li>
-                <a className='navbar-link' to="/jobs">Search Jobs</a>
+                <Link className='navbar-link' to="/jobs">Search Jobs</Link>
             </li>
         </nav>
     )

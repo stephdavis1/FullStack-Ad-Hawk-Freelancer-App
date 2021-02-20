@@ -1,7 +1,13 @@
 import React from 'react';
 
-const HomePage = () => {
-    return <div className="container">Home Page</div>
+const Homepage = () => {
+    
+    return (
+        <div>
+            <h1>Hire the best freelancers for any job online.</h1>
+            <h2>Millions of people use Ad-hawk to turn their idea into reality</h2>
+        </div>
+    )
 };
 
-export default HomePage;
+export default Homepage;
