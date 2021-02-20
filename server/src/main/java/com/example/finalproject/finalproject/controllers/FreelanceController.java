@@ -19,4 +19,5 @@ public class FreelanceController {
     public ResponseEntity<Freelancer> getOneFreelancer(@PathVariable Long id){
         return new ResponseEntity(freelancerRepository.findById(id), HttpStatus.OK);
     }
+
 }

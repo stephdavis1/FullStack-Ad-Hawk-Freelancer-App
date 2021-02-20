@@ -47,6 +47,7 @@ public class JobController {
     public ResponseEntity<Job> updateJob(@RequestBody Job job, @PathVariable Long id){
         Job jobToUpdate = jobRepository.findById(id).get();
         jobToUpdate.setTitle(job.getTitle());
+        jobToUpdate.setType(job.getType());
         jobToUpdate.setDescription(job.getDescription());
         jobToUpdate.setCreated_at(job.getCreated_at());
         jobToUpdate.setLocation(job.getLocation());

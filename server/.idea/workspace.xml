@@ -5,24 +5,99 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c048f6d-b4f2-4cf0-9cd0-c61c2ac50daf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../DUMMY/dummy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/028c22074a2487d3ff76cbbfb264443c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/0feb6ba11fac9269bf4e49a5d8f6c9f8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/1097209e0ebc69f013b3f25f72decd42.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/10acee7eb29ae7933ac27e8aa20d2960.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/1335ed89dd5f3dddd95e3173901f623e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/1e5f35146a138bc72846a2334ca4b26f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/238756d7e37e55357c43e3221114e378.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/27f65c4bd3ba40a1c9eecc9130876782.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/3356ea5724fe2f085040f9d6b9cd486d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/3a2bc7c5888bdc7d64a7590682ebbc7a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/3b1737fe7a09ecc6f908867425196cd2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/3ee3fac93cf0dc5c7698148ba1a19d34.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/405b35d2b93e796e85fc5e370e907b13.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/444541b65d1c9e8415d2904378ba0733.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/47e7dc1769018c0769d226950928f5f5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/49006ff7feff3551880613cc82fc036d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/49defedd78cd6aaa1c26e261b9c13c32.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/4d58465a850320d8c2d191a93602b9b3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/4edd66ab473bce43dac00a55b554d189.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/568bda97e1ef9394b5f156b82f9264d8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/60988792bd13d89efd4262b045f25aa7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/644b3d8f394457b39a39a8f68962b4f6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/68d815eb93e76c8b59e4d50229f3e87e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/6c340ee6aadeff533b7f2ab581038125.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/7d2449d2d670204457a8cfe3949a19a0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/93f0666a36f0c4746e02713d7159873c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/961c88cc6830cb1ea20b8c1b226042a4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/96a7da039983b834faca2248f15ae29c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/99b7d021af6853bff05dfd0fd8362161.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/a3ebc80065f7482013e09847b1afe2f3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/ae1e19483b2859a402db8184917955db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/b31a0081e49de5b262c5b43d4cfe06f5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/bdf049a38487736daa198cedec2a63ce.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/bedb51464518573cb63dd24687eaaea5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/c48ff6be8201b4dcc49c98c8a6f2416e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/c553203ec6597b0e1d623e84d35a34bd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/c860086832c5c78201545a56f33c7df1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/cd6e68cf27d257349a8db93421bf1baf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/d01197aeaace718cd63ad07fca380318.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/d406c4c6078250e71d79d08d4172640f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/d6203e4073118981977f99ea3c3aa2ff.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/da5698f8c858756d6372cd0c98a71baf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/db35d97db4ecde153a2ff18edcdd616b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/dccdf29a0b0e8f2f36d80a0b130a49f5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/de6efc87e52f51b4eda78e74e0b1a001.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/e2415bfb0ffe72dd9a09497f2ea90c76.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/f82590fe37d9cc087df5852494bb05fd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/fcf0ba4fe2fff1c0f28b0f4b86293743.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/node_modules/.cache/babel-loader/fee2901abba2a9f4b49660fcf437db99.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/components/Joblists/JobsPagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/components/Joblists/SearchForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../client/node_modules/.cache/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Joblists/useFetchJobs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Joblists/useFetchJobs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/components/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/components/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/controllers/FreelanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/controllers/FreelanceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/controllers/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/controllers/JobController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/models/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/models/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/finalproject/finalproject/FinalprojectApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/finalproject/finalproject/FinalprojectApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/components/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/components/DataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/controllers/JobController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/controllers/JobController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/models/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/models/Job.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/repositories/JobRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/repositories/JobRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/finalproject/finalproject/FinalprojectApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/finalproject/finalproject/FinalprojectApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1ohD4VbjsWTlKWeg3JB6a90OSEC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -59,5 +134,20 @@
       <updated>1613729741152</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

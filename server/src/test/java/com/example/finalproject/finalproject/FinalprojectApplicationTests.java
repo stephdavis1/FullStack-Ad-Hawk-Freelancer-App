@@ -9,9 +9,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Arrays;
-import java.util.List;
-
 @SpringBootTest
 class FinalprojectApplicationTests {
 
@@ -32,8 +29,8 @@ class FinalprojectApplicationTests {
 		freelancerRepository.save(bob);
 
 
-		Job web = new Job("Front-End developer", "create an app for freelancers to search for work", 500, true,
-				"JS, HTML, CSS", bob);
+		Job web = new Job("Photoshop","Freelance","Looking for someone to help with photoshop","20/02/2021","Glasgow, Scotland","Wozzle", "http://wozzle",
+				"Email resume to 1234@fakemail.com", ".png", bob);
 		jobRepository.save(web);
 	}
 
