@@ -13,3 +13,29 @@
   color: darkcyan;
   border-radius: 4;
 }
+
+.menu{
+  text-align: center;
+  display: flex;
+  padding: 10px;
+  background-color: #EFEFEF;
+  color: #0094e4;  
+}
+
+.menu li a{
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu li a:visited{
+  color:#0094e4;
+  text-align: center;
+}
+
+.menu li{
+  text-align: center;
+  padding-right: 10px;
+  list-style: none;
+  color: white;
+  font-family: "Helvetica", arial, sans-serif; font-size: 14px;
+}

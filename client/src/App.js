@@ -10,6 +10,10 @@ import JobContainer from './containers/JobContainer';
 import Footer from './containers/Footer/Footer';
 
 
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar";
+import Homepage from "./components/Homepage/Homepage";
+
 function App() {
 
   return (

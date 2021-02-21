@@ -6,7 +6,6 @@ const NavBar = () => {
     const back = () => {
         history.goBack();
     }
-
     return (
         <nav class="navbar">
             <li>
@@ -16,7 +15,7 @@ const NavBar = () => {
                 <Link className='navbar-link' to="/">Home</Link>
             </li>
             <li>
-                <Link className='navbar-link' to="/jobs">Search Jobs</Link>
+                <Link className='navbar-link' to="/jobs">Jobs</Link>
             </li>
         </nav>
     )
