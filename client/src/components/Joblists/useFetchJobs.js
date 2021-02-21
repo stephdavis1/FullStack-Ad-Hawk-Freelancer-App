@@ -7,8 +7,8 @@ const actions = {
     error: 'error',
     update_has_next_page: 'update-has-next-page'
 }
-// const baseUrl = 'https://api.allorigins.win/raw?url=https://jobs.github.com/positions.json'
-const baseUrl = 'http://localhost:8080/jobs'
+const baseUrl = 'https://api.allorigins.win/raw?url=https://jobs.github.com/positions.json'
+// const baseUrl = 'http://localhost:8080/jobs'
 
 function reducer(state, action) {
     switch (action.type) {
