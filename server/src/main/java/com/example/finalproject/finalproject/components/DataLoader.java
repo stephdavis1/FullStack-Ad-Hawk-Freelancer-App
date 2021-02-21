@@ -32,21 +32,15 @@ public class DataLoader implements ApplicationRunner {
 
         // Jobs
 
-        Job job1 = new Job ("Front-End developer", "create an app for freelancers to search for work", 500, true,
-                "JS, HTML, CSS", freelancer1);
+        Job web = new Job("Photoshop","Freelance","Looking for someone to help with photoshop","02/20/2021","Glasgow, Scotland","Wizzle", "http://wizzle",
+                "Email resume to 1234@fakemail.com", ".png", freelancer1);
 
-        Job job2 = new Job("Logo Design", "Create a logo and branding for a car company",240, true,
-                "Graphic Design/Photoshop Illustrator", freelancer1);
 
-        Job job3 = new Job("Photography", "Product photography/photo editing for ecommerce website", 130, false,
-                "Photographer", freelancer1);
+        Job e = new Job("E commerce Website - Online Service Marketplace","Freelance","We are looking for Online Service Marketplace connecting the Buyers and Sellers of a geographical Region.",
+                "02/12/2021", "Edinburgh, Scotland","Webhelp",
+                "https://webhelp.com/","Send an email", ".png", freelancer1);
 
-        Job job4 = new Job("Customer Service Advisor", "Inbound/Outbound call centre work for a company", 80, false,
-                "Customer Service skills", freelancer1);
-
-        jobRepository.save(job1);
-        jobRepository.save(job2);
-        jobRepository.save(job3);
-        jobRepository.save(job4);
+        jobRepository.save(web);
+        jobRepository.save(e);
     }
 }
