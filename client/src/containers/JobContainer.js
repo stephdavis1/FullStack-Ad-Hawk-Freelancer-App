@@ -8,13 +8,15 @@ import SearchForm from '../components/Joblists/SearchForm';
 
 function JobContainer() {
 
-  const [params, setParams] = useState({})
+  const [params, setParams] = useState({description: "", location: ""})
   const [page, setPage] = useState(1)
   const { jobs, loading, error, hasNextPage } = useFetchJobs(params, page)
 
   function handleParamChange(e) {
     const param = e.target.name
     const value = e.target.value
+    console.log(param);
+    console.log(value);
     setPage(1)
     setParams(prevParams => {
       return { ...prevParams, [param]: value }

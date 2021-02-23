@@ -26,8 +26,43 @@ function reducer(state, action) {
     }
 }
 
+// export default function useFilterJobs(jobs) {
+//     const [state, dispatch] = useReducer(filterReducer, { jobs })
+// }
+
 export default function useFetchJobs(params, page) {
     const [state, dispatch] = useReducer(reducer, { jobs: [], loading: true })
+
+    const filterDescription = (description, state) => {
+        if (description !== "") {
+            // make a copy of the state
+            let stateCopy = { ...state }
+            // filter out the state.jobs.description based on params.description
+            stateCopy.jobs = stateCopy.jobs.filter((job) => {
+                return job.title.includes(description)
+    
+            })
+            // save filter results back to state copy
+            console.log(stateCopy)
+            return stateCopy
+        }
+        return state
+    }
+    const filterLocation = (location, state) => {
+        if (location !== "") {
+            // make a copy of the state
+            let stateCopy = { ...state }
+            // filter out the state.jobs.description based on params.description
+            stateCopy.jobs = stateCopy.jobs.filter((job) => {
+                return job.location.includes(location)
+    
+            })
+            // save filter results back to state copy
+            console.log(stateCopy)
+            return stateCopy
+        }
+        return state
+    }
 
     useEffect(() => {
         const cancelToken1 = axios.CancelToken.source()
@@ -59,6 +94,13 @@ export default function useFetchJobs(params, page) {
         }
     }, [params, page])
 
+    console.log(params)
+    console.log(state)
+    console.log(params.description)
 
-    return state
+    let descriptionFiltered = filterDescription(params.description, state);
+    let locationFiltered = filterLocation(params.location, descriptionFiltered);
+
+    return locationFiltered;
+   
 }
