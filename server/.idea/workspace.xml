@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="5c048f6d-b4f2-4cf0-9cd0-c61c2ac50daf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../client/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../client/node_modules/.cache/.eslintcache" afterDir="false" />
     </list>
+=======
+    <list default="true" id="2e56fca6-890a-4a89-a5bd-b7427d2f2b91" name="Default Changelist" comment="" />
+>>>>>>> features/Styling
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

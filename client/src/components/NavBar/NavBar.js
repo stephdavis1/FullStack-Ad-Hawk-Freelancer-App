@@ -1,4 +1,5 @@
 import { Link, useHistory } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
 
 const NavBar = () => {
     const history = useHistory();
@@ -7,18 +8,14 @@ const NavBar = () => {
         history.goBack();
     }
     return (
-        <nav class="navbar">
-            <li>
-                <a className='navbar-link' href="javascript:history.back()">Back</a>
-            </li>
-            <li>
-                <Link className='navbar-link' to="/">Home</Link>
-            </li>
-            <li>
-                <Link className='navbar-link' to="/jobs">Jobs</Link>
-            </li>
-        </nav>
+        <Nav className="justify-content-center" activeKey="/home">
+            <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="/alljobs">All Jobs</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="/myjobs">My Jobs</Nav.Link></Nav.Item>
+        </Nav>
     )
 }
 
 export default NavBar;
+
+
