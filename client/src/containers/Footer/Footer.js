@@ -14,7 +14,7 @@ const Footer = () => {
             <span className="text-footer text-centered">
                 <p>Created by Mitchell and Steph. 
                 <br />You can find us at:</p>
-                <Github href="github.com/Mitchell-McShane">/Mitchell-McShane</Github>
+                <Github href="https://github.com/Mitchell-McShane">/Mitchell-McShane</Github>
                 <Github href="https://github.com/stephdavis1">/stephdavis1</Github>
             </span>
         </Container>
