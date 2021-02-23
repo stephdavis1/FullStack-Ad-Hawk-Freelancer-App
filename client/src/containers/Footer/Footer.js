@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { Github } from 'react-bootstrap-icons';
 
 const Footer = () => {
 
@@ -10,12 +11,11 @@ const Footer = () => {
         }}
         >
         <Container className="py-3 text-center">
-            <span className="text-muted text-centered">
-                Created by Mitchell and Steph. You can find us on:
-                <br />
-                <i className="fab fa-github" /> github.com/Mitchell-McShane 
-                <br />
-                <i className="fab fa-github" /> github.com/stephdavis1 
+            <span className="text-footer text-centered">
+                <p>Created by Mitchell and Steph. 
+                <br />You can find us at:</p>
+                <Github href="github.com/Mitchell-McShane">/Mitchell-McShane</Github>
+                <Github href="https://github.com/stephdavis1">/stephdavis1</Github>
             </span>
         </Container>
         </footer>
