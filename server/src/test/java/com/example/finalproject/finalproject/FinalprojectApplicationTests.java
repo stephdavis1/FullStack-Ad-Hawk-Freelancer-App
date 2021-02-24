@@ -28,10 +28,6 @@ class FinalprojectApplicationTests {
 		Freelancer bob = new Freelancer("Bob","bob123@fakemail.com", "Robert123", FreelancerType.SKILLSET1);
 		freelancerRepository.save(bob);
 
-
-		Job web = new Job("Photoshop","Looking for someone to help with photoshop","20/02/2021","Glasgow, Scotland","Wozzle", "http://wozzle",
-				"Email resume to 1234@fakemail.com", ".png", bob);
-		jobRepository.save(web);
 	}
 
 

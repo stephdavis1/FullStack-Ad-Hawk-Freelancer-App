@@ -48,11 +48,7 @@ public class JobController {
         Job jobToUpdate = jobRepository.findById(id).get();
         jobToUpdate.setTitle(job.getTitle());
         jobToUpdate.setDescription(job.getDescription());
-        jobToUpdate.setCreated_at(job.getCreated_at());
         jobToUpdate.setLocation(job.getLocation());
-        jobToUpdate.setCompany(job.getCompany());
-        jobToUpdate.setCompany_url(job.getCompany_url());
-        jobToUpdate.setHow_to_apply(job.getHow_to_apply());
         jobToUpdate.setCompany_logo(job.getCompany_logo());
         jobRepository.save(jobToUpdate);
         return new ResponseEntity<>(jobToUpdate, HttpStatus.OK);

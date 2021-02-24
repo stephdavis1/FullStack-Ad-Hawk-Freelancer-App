@@ -7,8 +7,8 @@ const actions = {
     error: 'error',
     update_has_next_page: 'update-has-next-page'
 }
-const baseUrl = `${process.env.NODE_ENV === 'development' ? 'https://thingproxy.freeboard.io/fetch/' : 'https://cors-anywhere.herokuapp.com/'}https://jobs.github.com/positions.json/`;
-// const baseUrl = 'http://localhost:8080/jobs'
+// const baseUrl = `${process.env.NODE_ENV === 'development' ? 'https://thingproxy.freeboard.io/fetch/' : 'https://cors-anywhere.herokuapp.com/'}https://jobs.github.com/positions.json/`;
+const baseUrl = 'http://localhost:8080/jobs'
 
 function reducer(state, action) {
     switch (action.type) {
@@ -82,7 +82,7 @@ export default function useFetchJobs(params, page) {
             cancelToken: cancelToken2.token,
             params: { markdown: true, page: page + 1, ...params }
         }).then(res => {
-            dispatch({ type: actions.update_has_next_page, payload: { hasNextPage: res.data.length !== 5 } })
+            dispatch({ type: actions.update_has_next_page, payload: { hasNextPage: res.data.length !== 0 } })
             console.log(res.data)
         }).catch(e => {
             if (axios.isCancel(e)) return

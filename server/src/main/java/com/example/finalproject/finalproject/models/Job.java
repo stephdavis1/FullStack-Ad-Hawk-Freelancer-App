@@ -15,43 +15,29 @@ public class Job {
     @Column
     private String title;
 
-    @Column
+    @Lob
     private String description;
-
-    @Column
-    private String created_at;
 
     @Column
     private String location;
 
     @Column
-    private String company;
-
-    @Column
-    private String company_url;
-
-    @Column
-    private String how_to_apply;
-
-    @Column
     private String company_logo;
 
+    @Column
+    private Boolean accepted;
+
     @ManyToOne
-    @JoinColumn(name = "freelancer_id", nullable = false)
+    @JoinColumn(name = "freelancer_id", nullable = true)
     @JsonIgnoreProperties({"jobs"})
     private Freelancer freelancer;
 
-    public Job(String title, String description, String created_at, String location, String company, String company_url,
-               String how_to_apply, String company_logo, Freelancer freelancer) {
+    public Job(String title, String description, String location, String company_logo, Boolean accepted) {
         this.title = title;
         this.description = description;
-        this.created_at = created_at;
         this.location = location;
-        this.company = company;
-        this.company_url = company_url;
-        this.how_to_apply = how_to_apply;
         this.company_logo = company_logo;
-        this.freelancer = freelancer;
+        this.accepted = accepted;
     }
 
     public Job() {
@@ -81,44 +67,12 @@ public class Job {
         this.description = description;
     }
 
-    public String getCreated_at() {
-        return created_at;
-    }
-
-    public void setCreated_at(String created_at) {
-        this.created_at = created_at;
-    }
-
     public String getLocation() {
         return location;
     }
 
     public void setLocation(String location) {
         this.location = location;
-    }
-
-    public String getCompany() {
-        return company;
-    }
-
-    public void setCompany(String company) {
-        this.company = company;
-    }
-
-    public String getCompany_url() {
-        return company_url;
-    }
-
-    public void setCompany_url(String company_url) {
-        this.company_url = company_url;
-    }
-
-    public String getHow_to_apply() {
-        return how_to_apply;
-    }
-
-    public void setHow_to_apply(String how_to_apply) {
-        this.how_to_apply = how_to_apply;
     }
 
     public String getCompany_logo() {
@@ -129,11 +83,11 @@ public class Job {
         this.company_logo = company_logo;
     }
 
-    public Freelancer getFreelancer() {
-        return freelancer;
+    public Boolean getAccepted() {
+        return accepted;
     }
 
-    public void setFreelancer(Freelancer freelancer) {
-        this.freelancer = freelancer;
+    public void setAccepted(Boolean accepted) {
+        this.accepted = accepted;
     }
 }
