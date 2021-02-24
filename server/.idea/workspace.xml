@@ -1,51 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
-  <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="5c048f6d-b4f2-4cf0-9cd0-c61c2ac50daf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../client/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../client/node_modules/.cache/.eslintcache" afterDir="false" />
-    </list>
-=======
-    <list default="true" id="2e56fca6-890a-4a89-a5bd-b7427d2f2b91" name="Default Changelist" comment="" />
->>>>>>> features/Styling
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectId" id="1ohD4VbjsWTlKWeg3JB6a90OSEC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
   <component name="RunManager">
     <configuration name="FinalprojectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.example.finalproject.finalproject.FinalprojectApplication" />
-      <module name="server" />
+      <module name="finalproject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.finalproject.finalproject.*" />
@@ -61,31 +19,5 @@
         <item itemvalue="Application.FinalprojectApplication" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="5c048f6d-b4f2-4cf0-9cd0-c61c2ac50daf" name="Default Changelist" comment="" />
-      <created>1613729741152</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1613729741152</updated>
-    </task>
-    <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

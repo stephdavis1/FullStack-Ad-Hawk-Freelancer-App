@@ -9,10 +9,6 @@ import Homepage from './components/Homepage/Homepage';
 import JobContainer from './containers/JobContainer';
 import Footer from './containers/Footer/Footer';
 
-<<<<<<< HEAD
-=======
-
->>>>>>> develop
 function App() {
 
   return (

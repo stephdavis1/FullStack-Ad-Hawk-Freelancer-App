@@ -16,9 +16,6 @@ public class Job {
     private String title;
 
     @Column
-    private String type;
-
-    @Column
     private String description;
 
     @Column
@@ -44,10 +41,9 @@ public class Job {
     @JsonIgnoreProperties({"jobs"})
     private Freelancer freelancer;
 
-    public Job(String title, String type, String description, String created_at, String location, String company, String company_url,
+    public Job(String title, String description, String created_at, String location, String company, String company_url,
                String how_to_apply, String company_logo, Freelancer freelancer) {
         this.title = title;
-        this.type = type;
         this.description = description;
         this.created_at = created_at;
         this.location = location;
@@ -75,14 +71,6 @@ public class Job {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 
     public String getDescription() {
