@@ -7,13 +7,13 @@ const actions = {
     error: 'error',
     update_has_next_page: 'update-has-next-page'
 }
-const baseUrl = 'https://api.allorigins.win/raw?url=https://jobs.github.com/positions.json'
+const baseUrl = `${process.env.NODE_ENV === 'development' ? 'https://thingproxy.freeboard.io/fetch/' : 'https://cors-anywhere.herokuapp.com/'}https://jobs.github.com/positions.json/`;
 // const baseUrl = 'http://localhost:8080/jobs'
 
 function reducer(state, action) {
     switch (action.type) {
         case actions.make_request:
-            return { loading: true, jobs: [] }
+            return { loading: true, jobs: [], hasNextPage: false }
         case actions.get_data:
             return { ...state, loading: false, jobs: action.payload.jobs }
         case actions.error:
@@ -26,12 +26,9 @@ function reducer(state, action) {
     }
 }
 
-// export default function useFilterJobs(jobs) {
-//     const [state, dispatch] = useReducer(filterReducer, { jobs })
-// }
 
 export default function useFetchJobs(params, page) {
-    const [state, dispatch] = useReducer(reducer, { jobs: [], loading: true })
+    const [state, dispatch] = useReducer(reducer, { jobs: [], loading: true, hasNextPage: false })
 
     const filterDescription = (description, state) => {
         if (description !== "") {
@@ -43,9 +40,12 @@ export default function useFetchJobs(params, page) {
     
             })
             // save filter results back to state copy
-            console.log(stateCopy)
+            console.log("stateCopy",stateCopy)
+            console.log("update_has_next_page", actions.update_has_next_page)
+            
             return stateCopy
         }
+        
         return state
     }
     const filterLocation = (location, state) => {
@@ -82,7 +82,8 @@ export default function useFetchJobs(params, page) {
             cancelToken: cancelToken2.token,
             params: { markdown: true, page: page + 1, ...params }
         }).then(res => {
-            dispatch({ type: actions.update_has_next_page, payload: { hasNextPage: res.data.length !== 0 } })
+            dispatch({ type: actions.update_has_next_page, payload: { hasNextPage: res.data.length !== 5 } })
+            console.log(res.data)
         }).catch(e => {
             if (axios.isCancel(e)) return
             dispatch({ type: actions.error, payload: { error: e } })
@@ -94,9 +95,6 @@ export default function useFetchJobs(params, page) {
         }
     }, [params, page])
 
-    console.log(params)
-    console.log(state)
-    console.log(params.description)
 
     let descriptionFiltered = filterDescription(params.description, state);
     let locationFiltered = filterLocation(params.location, descriptionFiltered);
