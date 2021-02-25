@@ -62,14 +62,14 @@ public class JobController {
     }
 
 //   // GET ALL JOBS THAT ARE ACCEPTED AS TRUE
-//    @GetMapping(value = "/jobs/myjobs")
-//    public ResponseEntity<List<Job>> getAcceptedJobs(){
-//        return new ResponseEntity(jobRepository.findByAcceptedTrue(), HttpStatus.OK);
-//    }
+    @GetMapping(value = "/jobs/myjobs")
+    public ResponseEntity<List<Job>> getAcceptedJobs(){
+        return new ResponseEntity(jobRepository.findByAcceptedTrue(), HttpStatus.OK);
+    }
 //
 //    // GET ALL JOBS THAT ARE ACCEPTED AS FALSE
-//    @GetMapping(value = "/jobs/alljobs")
-//    public ResponseEntity<List<Job>> getDeclinedJobs(){
-//        return new ResponseEntity(jobRepository.findByAcceptedFalse(), HttpStatus.OK);
-//    }
+    @GetMapping(value = "/jobs/alljobs")
+    public ResponseEntity<List<Job>> getDeclinedJobs(){
+        return new ResponseEntity(jobRepository.findByAcceptedFalse(), HttpStatus.OK);
+    }
 }

@@ -10,10 +10,10 @@ import java.util.List;
 public interface JobRepository extends JpaRepository<Job, Long> {
 
 //    // List jobs that are accepted as True
-//    List<Job> findByAcceptedTrue();
+    List<Job> findByAcceptedTrue();
 //
 //    // List jobs that are accepted as False
-//    List<Job> findByAcceptedFalse();
+    List<Job> findByAcceptedFalse();
 
 
 }

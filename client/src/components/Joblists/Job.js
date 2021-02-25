@@ -34,6 +34,7 @@ export default function Job({ job }) {
                 <Collapse in={open}>
                     <div className="mt-4">
                         <ReactMarkdown escapeHtml={false} source={job.description} />
+                        <Button href="/myjobs"variant="success">Accept</Button>
                     </div>
                 </Collapse>
             </Card.Body>

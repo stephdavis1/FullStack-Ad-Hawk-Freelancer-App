@@ -3,23 +3,43 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:features" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c51deba2-52e3-4847-afb8-8ecb2822d322" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/models/JobPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../client/node_modules/.cache/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/components/Homepage/Homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Homepage/Homepage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Joblists/useFetchJobs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Joblists/useFetchJobs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Joblists/Job.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Joblists/Job.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/NavBar/NavBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/components/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/components/DataLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/controllers/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/controllers/JobController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/models/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/models/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/finalproject/finalproject/FinalprojectApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/finalproject/finalproject/FinalprojectApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/repositories/JobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/repositories/JobRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/components/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/components/DataLoader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/controllers/JobController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/controllers/JobController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/models/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/models/Job.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/finalproject/finalproject/FinalprojectApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/finalproject/finalproject/FinalprojectApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,5 +109,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1857" height="59" key="GridCell.Tab.0.bottom" timestamp="1614255757813">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1366" height="274" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1614251412549" />
+    <state width="1857" height="59" key="GridCell.Tab.0.bottom/0.23.1440.828/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1614255757813" />
+    <state width="1065" height="274" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1614251902233" />
+    <state width="1857" height="274" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.23.1920.1008@-1920.23.1920.1008" timestamp="1614182537897" />
+    <state width="1857" height="59" key="GridCell.Tab.0.center" timestamp="1614255757812">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1366" height="274" key="GridCell.Tab.0.center/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1614251412547" />
+    <state width="1857" height="59" key="GridCell.Tab.0.center/0.23.1440.828/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1614255757812" />
+    <state width="1065" height="274" key="GridCell.Tab.0.center/0.23.1440.877/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1614251902232" />
+    <state width="1857" height="274" key="GridCell.Tab.0.center/0.23.1440.877/-1920.23.1920.1008@-1920.23.1920.1008" timestamp="1614182537896" />
+    <state width="1857" height="59" key="GridCell.Tab.0.left" timestamp="1614255757811">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1366" height="274" key="GridCell.Tab.0.left/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1614251412545" />
+    <state width="1857" height="59" key="GridCell.Tab.0.left/0.23.1440.828/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1614255757811" />
+    <state width="1065" height="274" key="GridCell.Tab.0.left/0.23.1440.877/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1614251902231" />
+    <state width="1857" height="274" key="GridCell.Tab.0.left/0.23.1440.877/-1920.23.1920.1008@-1920.23.1920.1008" timestamp="1614182537895" />
+    <state width="1857" height="59" key="GridCell.Tab.0.right" timestamp="1614255757813">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1366" height="274" key="GridCell.Tab.0.right/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1614251412548" />
+    <state width="1857" height="59" key="GridCell.Tab.0.right/0.23.1440.828/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1614255757813" />
+    <state width="1065" height="274" key="GridCell.Tab.0.right/0.23.1440.877/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1614251902232" />
+    <state width="1857" height="274" key="GridCell.Tab.0.right/0.23.1440.877/-1920.23.1920.1008@-1920.23.1920.1008" timestamp="1614182537896" />
   </component>
 </project>
