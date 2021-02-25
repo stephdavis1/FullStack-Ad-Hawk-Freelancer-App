@@ -11,7 +11,7 @@ const NavBar = () => {
     return (
         <Nav className="justify-content-center" activeKey="/">
             <a class="navbar-brand">
-            <img src='https://i.imgur.com/5gwyncf.png' width="100" height="30" alt="ad-hawk"></img>
+            <img src='https://i.imgur.com/5gwyncf.png' width="80" height="30" alt="ad-hawk"></img>
             </a>
             <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link href="/alljobs">All Jobs</Nav.Link></Nav.Item>
