@@ -1,30 +1,35 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useState } from 'react';
-import { Container } from 'react-bootstrap';
-import Job from '../components/Joblists/Job';
-import useAcceptedJobs from '../components/Joblists/useAcceptedJobs';
-import SearchForm from '../components/Joblists/SearchForm';
+import { useState, useEffect } from 'react';
+import AcceptedJobs from '../components/Joblists/AcceptedJobs';
+import MyJobList from '../components/Joblists/MyJobList';
 
-function MyJobContainer() {
-    const [params, setParams] = useState({ description: "", location: "" })
-    const { jobs } = useAcceptedJobs(params)
-    function handleParamChange(e) {
-        const param = e.target.name
-        const value = e.target.value
-        setParams(prevParams => {
-            return { ...prevParams, [param]: value }
-        })
-    }
+const MyJobContainer = () => {
+    const [myJobs, setMyJobs] = useState([])
+    useEffect(() => {
+        AcceptedJobs.getJobs()
+            .then(jobs => {
+                setMyJobs(jobs)
+            })
+    }, []);
+
+    const updateJob = updatedJob => {
+        AcceptedJobs.updateJob(updatedJob);
+        const updatedJobIndex = myJobs.findIndex(job => job.id === updateJob.id);
+        const updatedJobs = [...myJobs];
+        updatedJobs[updatedJobIndex] = updatedJob;
+        setMyJobs(updatedJobs);
+    };
+
+    const deleteJob = idToDelete => {
+        AcceptedJobs.deleteJob(idToDelete);
+        setMyJobs(myJobs.filter(job => job.id !== idToDelete));
+    };
 
     return (
-        <Container className="my-4">
-            <h1 className="mb-4">Accepted Jobs</h1>
-            <SearchForm params={params} onParamChange={handleParamChange} />
-            {jobs.map(job => {
-                return <Job key={job.id} job={job} />
-            })}
-        </Container>
-    );
-};
+        <div>
+            <MyJobList jobs={myJobs} updateJob={updateJob} deleteJob={deleteJob} />
+            {/* <h1>THIS IS MY JOBS PAGE</h1> */}
+        </div>
+    )
+}
 
 export default MyJobContainer;
