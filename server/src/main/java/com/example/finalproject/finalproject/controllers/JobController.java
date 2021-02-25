@@ -50,6 +50,7 @@ public class JobController {
         jobToUpdate.setDescription(job.getDescription());
         jobToUpdate.setLocation(job.getLocation());
         jobToUpdate.setCompany_logo(job.getCompany_logo());
+        jobToUpdate.setAccepted(job.getAccepted());
         jobRepository.save(jobToUpdate);
         return new ResponseEntity<>(jobToUpdate, HttpStatus.OK);
     }

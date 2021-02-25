@@ -40,7 +40,7 @@ public class DataLoader implements ApplicationRunner {
 
         // Jobs
 
-        Job job1 = new Job("Niall's Old Job", "Looking for a replacement instructor to be a sound guy, and teach a bunch of G22 smart-ass, sarcastic, misfits", "Glasgow","https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/codeclan-logo/original.png", true);
+        Job job1 = new Job("Niall's Old Job", "Looking for a rad instructor to be a sound guy, and teach a bunch of G22 smart-ass, misfits!", "Glasgow","https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/codeclan-logo/original.png", true);
 
 
         Job job2 = new Job("Senior Backend Engineer", "Are you interested in working in healthcare and medical sectors for a disruptive start-up that is backed by VCs, won several major UK research grants and collaborates with leading Universities?\n" +
