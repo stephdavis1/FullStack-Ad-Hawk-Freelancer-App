@@ -5,21 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c51deba2-52e3-4847-afb8-8ecb2822d322" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/models/JobPayload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../client/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/components/Homepage/Homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Homepage/Homepage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Joblists/useFetchJobs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Joblists/useFetchJobs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Joblists/Job.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Joblists/Job.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/components/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/components/DataLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/controllers/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/controllers/JobController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/models/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/models/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/finalproject/finalproject/FinalprojectApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/finalproject/finalproject/FinalprojectApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/repositories/JobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/finalproject/repositories/JobRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/components/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/components/DataLoader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/controllers/JobController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/controllers/JobController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/models/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/models/Job.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/finalproject/finalproject/FinalprojectApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/finalproject/finalproject/FinalprojectApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/repositories/JobRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/finalproject/finalproject/repositories/JobRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,5 +86,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

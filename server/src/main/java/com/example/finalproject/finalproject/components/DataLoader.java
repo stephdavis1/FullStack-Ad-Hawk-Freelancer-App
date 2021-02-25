@@ -40,13 +40,16 @@ public class DataLoader implements ApplicationRunner {
 
         // Jobs
 
-        Job web = new Job("Photoshop Graphic Designer", "Looking for photoshop madlad", "Glasgow",".png", false);
+        Job web = new Job("Photoshop Graphic Designer", "Looking for photoshop madlad", "Glasgow, Scotland", "Remote","https://jobs.github.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVdhIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a2bd45ce3d759fa8f190678e8b8f5467059a6629/mwl-logo-square.png", true);
         jobRepository.save(web);
+
+        Job job = new Job("Backend developer", "Looking for something to do backend development", "Berlin, Germany", "Remote", ".jpeg", true);
+        jobRepository.save(job);
 
         List<JobPayload> foundJobs = apiClient.getAllJobs();
 
         List<Job> jobObjects = foundJobs.stream()
-                .map(s -> new Job(s.getTitle(), s.getDescription(), s.getLocation(), s.getCompany_logo(), false))
+                .map(s -> new Job(s.getTitle(), s.getDescription(), s.getLocation(), s.getType(), s.getCompany_logo(), false))
                 .collect(Collectors.toList());
 
         jobRepository.saveAll(jobObjects);

@@ -21,6 +21,8 @@ public class Job {
     @Column
     private String location;
 
+    @Column private String type;
+
     @Column
     private String company_logo;
 
@@ -32,10 +34,11 @@ public class Job {
     @JsonIgnoreProperties({"jobs"})
     private Freelancer freelancer;
 
-    public Job(String title, String description, String location, String company_logo, Boolean accepted) {
+    public Job(String title, String description, String location, String type, String company_logo, Boolean accepted) {
         this.title = title;
         this.description = description;
         this.location = location;
+        this.type = type;
         this.company_logo = company_logo;
         this.accepted = accepted;
     }
@@ -73,6 +76,14 @@ public class Job {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getCompany_logo() {
