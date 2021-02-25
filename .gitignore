@@ -2,3 +2,7 @@
 .vscode/
 
 db
+
+/node_modules
+
+/.eslintcache

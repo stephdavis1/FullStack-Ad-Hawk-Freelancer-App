@@ -2,37 +2,63 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#job-display{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#job-list{
+  border: 2px solid black;
+  color: darkcyan;
+  border-radius: 4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* navbar background colour */
+.justify-content-center{
+  background-color:#007bff;
+}
+
+.homepage-logo {
+  text-align: center;
+}
+
+.homepage-h1 {
+  text-align: center;
+}
+
+.homepage-h4 {
+  text-align: center;
+}
+
+.homepage-button {
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+/* navbar link colour */
+a.nav-link{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* //Homepage image overlay */
+.bg-overlay {
+    background: linear-gradient(rgba(48, 48, 48, 0.7), rgba(48, 48, 48, 0.7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 620px;
+    padding-top: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.py-3 {
+  background-color:#007bff;
 }
+
+.text-footer{
+  color: white;
+}
+
+

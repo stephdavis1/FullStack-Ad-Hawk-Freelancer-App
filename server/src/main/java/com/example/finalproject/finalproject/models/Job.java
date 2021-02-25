@@ -15,30 +15,29 @@ public class Job {
     @Column
     private String title;
 
-    @Column
+    @Lob
     private String description;
 
     @Column
-    private int rate;
+    private String location;
+
+    @Column
+    private String company_logo;
 
     @Column
     private Boolean accepted;
 
-    @Column
-    private String skills;
-
     @ManyToOne
-    @JoinColumn(name = "freelancer_id", nullable = false)
+    @JoinColumn(name = "freelancer_id", nullable = true)
     @JsonIgnoreProperties({"jobs"})
     private Freelancer freelancer;
 
-    public Job(String title, String description, int rate, Boolean accepted, String skills, Freelancer freelancer) {
+    public Job(String title, String description, String location, String company_logo, Boolean accepted) {
         this.title = title;
         this.description = description;
-        this.rate = rate;
+        this.location = location;
+        this.company_logo = company_logo;
         this.accepted = accepted;
-        this.skills = skills;
-        this.freelancer = freelancer;
     }
 
     public Job() {
@@ -68,12 +67,20 @@ public class Job {
         this.description = description;
     }
 
-    public int getRate() {
-        return rate;
+    public String getLocation() {
+        return location;
     }
 
-    public void setRate(int rate) {
-        this.rate = rate;
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getCompany_logo() {
+        return company_logo;
+    }
+
+    public void setCompany_logo(String company_logo) {
+        this.company_logo = company_logo;
     }
 
     public Boolean getAccepted() {
@@ -82,21 +89,5 @@ public class Job {
 
     public void setAccepted(Boolean accepted) {
         this.accepted = accepted;
-    }
-
-    public String getSkills() {
-        return skills;
-    }
-
-    public void setSkills(String skills) {
-        this.skills = skills;
-    }
-
-    public Freelancer getFreelancer() {
-        return freelancer;
-    }
-
-    public void setFreelancer(Freelancer freelancer) {
-        this.freelancer = freelancer;
     }
 }

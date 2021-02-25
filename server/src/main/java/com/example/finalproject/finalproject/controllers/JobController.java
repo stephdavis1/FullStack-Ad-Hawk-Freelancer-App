@@ -48,10 +48,9 @@ public class JobController {
         Job jobToUpdate = jobRepository.findById(id).get();
         jobToUpdate.setTitle(job.getTitle());
         jobToUpdate.setDescription(job.getDescription());
-        jobToUpdate.setRate(job.getRate());
+        jobToUpdate.setLocation(job.getLocation());
+        jobToUpdate.setCompany_logo(job.getCompany_logo());
         jobToUpdate.setAccepted(job.getAccepted());
-        jobToUpdate.setSkills(job.getSkills());
-        jobToUpdate.setFreelancer(job.getFreelancer());
         jobRepository.save(jobToUpdate);
         return new ResponseEntity<>(jobToUpdate, HttpStatus.OK);
     }
@@ -63,14 +62,14 @@ public class JobController {
         return new ResponseEntity<>(id, HttpStatus.OK);
     }
 
-   // GET ALL JOBS THAT ARE ACCEPTED AS TRUE
-    @GetMapping(value = "/jobs/accepted")
+//   // GET ALL JOBS THAT ARE ACCEPTED AS TRUE
+    @GetMapping(value = "/jobs/myjobs")
     public ResponseEntity<List<Job>> getAcceptedJobs(){
         return new ResponseEntity(jobRepository.findByAcceptedTrue(), HttpStatus.OK);
     }
-
-    // GET ALL JOBS THAT ARE ACCEPTED AS FALSE
-    @GetMapping(value = "/jobs/decline")
+//
+//    // GET ALL JOBS THAT ARE ACCEPTED AS FALSE
+    @GetMapping(value = "/jobs/alljobs")
     public ResponseEntity<List<Job>> getDeclinedJobs(){
         return new ResponseEntity(jobRepository.findByAcceptedFalse(), HttpStatus.OK);
     }
